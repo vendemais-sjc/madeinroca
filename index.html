@@ -116,13 +116,13 @@
             pointer-events: none;
         }
         
-        /* ========== LETREIRO COMERCIAL REDUZIDO E ADAPTÁVEL ========== */
+        /* ========== LETREIRO COMERCIAL BEM MAIS FINO ========== */
         .commercial-ticker {
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            height: 100px; /* Reduzido */
+            height: 70px; /* Reduzido para 70px */
             background: rgba(0, 0, 0, 0.85);
             backdrop-filter: blur(15px);
             border-top: 2px solid rgba(255, 255, 255, 0.15);
@@ -153,12 +153,12 @@
         .ticker-item {
             display: flex;
             align-items: center;
-            gap: 20px;
-            padding: 10px 30px;
-            height: 85px; /* Reduzido */
-            min-width: 550px; /* Reduzido */
+            gap: 15px;
+            padding: 6px 20px;
+            height: 55px; /* Reduzido */
+            min-width: 400px; /* Reduzido */
             background: linear-gradient(135deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.06) 100%);
-            border-radius: 60px;
+            border-radius: 40px;
             border: 1px solid rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(10px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
@@ -173,13 +173,13 @@
         }
         
         .ticker-video {
-            width: 70px; /* Reduzido */
-            height: 70px; /* Reduzido */
+            width: 45px; /* Reduzido */
+            height: 45px; /* Reduzido */
             display: flex;
             align-items: center;
             justify-content: center;
             background: rgba(255, 255, 255, 0.1);
-            border-radius: 16px;
+            border-radius: 12px;
             padding: 2px;
             border: 2px solid rgba(255, 255, 255, 0.2);
             overflow: hidden;
@@ -189,12 +189,12 @@
             width: 100%;
             height: 100%;
             object-fit: contain; /* Mostra o vídeo completo sem cortes */
-            border-radius: 14px;
+            border-radius: 10px;
         }
         
         .ticker-text {
             color: var(--text-primary);
-            font-size: 1.6rem; /* Reduzido */
+            font-size: 1.1rem; /* Reduzido */
             font-weight: 700;
             letter-spacing: 0.5px;
             white-space: nowrap;
@@ -203,12 +203,12 @@
         
         .ticker-price {
             color: #00ff9d;
-            font-size: 1.8rem; /* Reduzido */
+            font-size: 1.3rem; /* Reduzido */
             font-weight: 800;
-            margin-left: 10px;
+            margin-left: 5px;
             background: rgba(0, 255, 157, 0.15);
-            padding: 5px 20px;
-            border-radius: 40px;
+            padding: 4px 14px;
+            border-radius: 30px;
             border: 1px solid rgba(0, 255, 157, 0.4);
             text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
             box-shadow: 0 0 15px rgba(0, 255, 157, 0.2);
@@ -610,11 +610,11 @@
         
         /* ========== AJUSTES RESPONSIVOS ========== */
         @media (min-width: 1920px) {
-            .commercial-ticker { height: 120px; }
-            .ticker-item { height: 100px; min-width: 650px; }
-            .ticker-video { width: 85px; height: 85px; }
-            .ticker-text { font-size: 1.8rem; }
-            .ticker-price { font-size: 2rem; }
+            .commercial-ticker { height: 85px; }
+            .ticker-item { height: 65px; min-width: 480px; }
+            .ticker-video { width: 55px; height: 55px; }
+            .ticker-text { font-size: 1.3rem; }
+            .ticker-price { font-size: 1.5rem; }
         }
         
         @media (max-width: 1024px) {
@@ -632,11 +632,11 @@
             .control-btn { width: 24px; height: 24px; }
             .play-pause-btn { width: 28px; height: 28px; }
             .volume-slider { width: 50px; }
-            .commercial-ticker { height: 90px; }
-            .ticker-item { height: 75px; min-width: 480px; padding: 8px 20px; }
-            .ticker-video { width: 60px; height: 60px; }
-            .ticker-text { font-size: 1.3rem; }
-            .ticker-price { font-size: 1.5rem; }
+            .commercial-ticker { height: 60px; }
+            .ticker-item { height: 50px; min-width: 340px; padding: 5px 15px; }
+            .ticker-video { width: 40px; height: 40px; }
+            .ticker-text { font-size: 1rem; }
+            .ticker-price { font-size: 1.1rem; padding: 3px 12px; }
         }
         
         @media (max-width: 480px) {
@@ -644,11 +644,11 @@
             .whatsapp-icon { font-size: 0.85rem; }
             .volume-slider { display: none; }
             .volume-icon { display: none; }
-            .commercial-ticker { height: 80px; }
-            .ticker-item { height: 65px; min-width: 400px; padding: 5px 15px; }
-            .ticker-video { width: 50px; height: 50px; }
-            .ticker-text { font-size: 1.1rem; }
-            .ticker-price { font-size: 1.2rem; }
+            .commercial-ticker { height: 55px; }
+            .ticker-item { height: 45px; min-width: 300px; padding: 4px 10px; gap: 10px; }
+            .ticker-video { width: 35px; height: 35px; }
+            .ticker-text { font-size: 0.85rem; }
+            .ticker-price { font-size: 0.95rem; padding: 2px 8px; }
         }
     </style>
 </head>
@@ -724,7 +724,7 @@
             <div class="playlist-items" id="playlist-items"></div>
         </div>
         
-        <!-- LETREIRO COM MP4 QUADRADO (ADAPTADO) -->
+        <!-- LETREIRO COM MP4 BEM MAIS FINO -->
         <div class="commercial-ticker">
             <div class="ticker-content" id="ticker-content"></div>
         </div>
@@ -747,7 +747,7 @@
             autoPlay: true,
             shuffleEnabled: false,
             continuousPlay: true,
-            tickerSpeed: 100 // Velocidade do letreiro (segundos para uma volta)
+            tickerSpeed: 45 // Velocidade do letreiro (segundos para uma volta) - ajustada
         };
 
         // ============================================
@@ -764,19 +764,19 @@
                 title: "music",
                 artist: "MPE ROCA",
                 duration: "3:45",
-                src: "musicasa.mp3",          // Renomeie para algo como "musicasa.mp3"
-                media: "midiapri.mp4",         // Renomeie para "midiapri.mp4"
+                src: "musicasa.mp3",
+                media: "midiapri.mp4",
                 genre: "Sertanejo"
             },
-                {
-                    id: 2,
-                    title: "Send_It_Back",
-                    artist: "DON_WEST",
-                    duration: "3:45",
-                    src: "DON_WEST_Send_It_Back_muzzik.m4a",          // Renomeie para algo como "musicasa.mp3"
-                    media: "midiaminr.mp4",         // Renomeie para "midiapri.mp4"
-                    genre: "Sertanejo"
-                }
+            {
+                id: 2,
+                title: "Send_It_Back",
+                artist: "DON_WEST",
+                duration: "3:45",
+                src: "DON_WEST_Send_It_Back_muzzik.m4a",
+                media: "midiaminr.mp4",
+                genre: "Sertanejo"
+            }
             // Adicione mais músicas aqui, separadas por vírgula
         ];
 
@@ -1268,10 +1268,4 @@
         });
     </script>
 </body>
-
 </html>
-
-
-
-
-
